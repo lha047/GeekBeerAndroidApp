@@ -1,29 +1,63 @@
 package uib.pilsogprog.geekbeer;
 
+import android.R.anim;
+import android.annotation.SuppressLint;
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 
+@SuppressLint({ "NewApi", "NewApi" })
 public class MainActivity extends FragmentActivity {
 
-    @Override
+    private Fragment mTopFragment;
+	private FragmentManager mFragmentManager;
+	private FragmentTransaction fragmentTransaction;
+
+	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayShowHomeEnabled(true);
         
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        Fragment searchFragment = fragmentManager.findFragmentById(R.id.fragment_content);
-        if(searchFragment == null) {
-        	FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        	fragmentTransaction.add(R.id.fragment_content, new SearchFragment());
-        	fragmentTransaction.commit();
-        }
-        
+        mFragmentManager = getSupportFragmentManager();
+        mTopFragment = mFragmentManager.findFragmentById(R.id.fragment_content);
+        if(mTopFragment == null) {
+        	replaceFragment(R.id.fragment_content, new SearchFragment());
+        }               
     }
+	
+	
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.add_beer_menu_item:
+			
+			return true;
+		case R.id.search_menu_item:
+			
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
+		
+	}
+
+
+
+	private void replaceFragment(int fragmentContent, Fragment fragment) {
+		fragmentTransaction = mFragmentManager.beginTransaction();
+		fragmentTransaction.add(fragmentContent, fragment);
+		fragmentTransaction.commit();
+	}
     
 	public void submit(View view) {
 		gotToSearchResultView();
@@ -33,7 +67,7 @@ public class MainActivity extends FragmentActivity {
 		FragmentManager fm = getSupportFragmentManager();
 		if(fm != null) {
 			FragmentTransaction ft = fm.beginTransaction();
-			ft.replace(R.id.fragment_content, new BasicFragment());
+			ft.add(R.id.main_content, new BasicFragment());
 			ft.commit();
 		}
 		
@@ -41,7 +75,7 @@ public class MainActivity extends FragmentActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_main, menu);
+    	getMenuInflater().inflate(R.menu.mainmenu, menu);
         return true;
     }
 }

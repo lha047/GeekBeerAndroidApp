@@ -1,5 +1,6 @@
 package uib.pilsogprog.geekbeer;
 
+import uib.pilsogprog.geekbeer.model.GeekBeerModel;
 import android.app.Activity;
 import android.database.DataSetObserver;
 import android.os.Bundle;

@@ -3,9 +3,10 @@
     <string name="app_name">GeekBeer</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">GeekBeer</string>
     <string name="search_beer_people_brewery">Search beer, people, brewery</string>
-    <string name="Search">Button</string>
+    <string name="search">Search</string>
     <string name="details_view">This is where the details is shown</string>
+    <string name="add_beer">Add Beer</string>
 
 </resources>
