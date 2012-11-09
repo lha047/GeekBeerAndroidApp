@@ -8,5 +8,7 @@
     <string name="search">Search</string>
     <string name="details_view">This is where the details is shown</string>
     <string name="add_beer">Add Beer</string>
+    <string name="settings">Setting</string>
+    <string name="map">Map</string>
 
 </resources>

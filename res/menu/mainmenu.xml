@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item android:id="@+id/search_menu_item" android:title="@string/search" android:showAsAction="ifRoom"></item>
-    <item android:id="@+id/add_beer_menu_item" android:title="@string/add_beer" android:showAsAction="ifRoom"></item>
-    
+
+    <item
+        android:id="@+id/search_menu_item"
+        android:showAsAction="ifRoom"
+        android:title="@string/search">
+    </item>
+    <item
+        android:id="@+id/add_beer_menu_item"
+        android:showAsAction="ifRoom"
+        android:title="@string/add_beer">
+    </item>
 
 </menu>
