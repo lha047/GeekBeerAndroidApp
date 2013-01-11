@@ -18,8 +18,8 @@
             
         </activity>
         <activity
-            android:name=".RegisterBeerActivity"
-            android:label="@string/register_beer" >
+            android:name=".AddBeerActivity"
+            android:label="@string/add_beer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,6 +27,8 @@
             </intent-filter>
             
         </activity>
+        <activity android:name=".ShowMyBeersActivity"
+            android:label="@string/my_beers">
+        </activity>
     </application>
-
 </manifest>
