@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/add_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submit"
+            android:text="@string/photo" />
+
+        <Button
+            android:id="@+id/add_barcode_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submit"
+            android:text="@string/barcode" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beer_name" />
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/style_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beer_style" />
+
+    <EditText
+        android:id="@+id/style_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/brewery_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bewery_name" />
+
+    <EditText
+        android:id="@+id/brewery_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/my_rating_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_rating" />
+
+    <EditText
+        android:id="@+id/my_rating_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" >
+    </EditText>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="submit"
+        android:text="@string/submit" />
+
+    <TextView
+        android:id="@+id/abv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/abv" />
+
+    <EditText
+        android:id="@+id/abv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" >
+    </EditText>
+
+    <!--
+    <FrameLayout
+        android:id="@+id/beer_name"
+        android:tag="BEER_NAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/beer_style"
+        android:tag="BEER_STYLE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/beer_brewery"
+        android:tag="BEER_BREWERY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <FrameLayout
+        android:id="@+id/beer_my_rating"
+        android:tag="BEER_MY_RATING"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <FrameLayout
+        android:id="@+id/beer_comment"
+        android:tag="BEER_COMMENT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <FrameLayout
+        android:id="@+id/beer_ABV"
+        android:tag="BEER_ABV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <FrameLayout
+        android:id="@+id/beer_origin"
+        android:tag="BEER_ORIGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <FrameLayout
+        android:id="@+id/beer_image"
+        android:tag="BEER_IMAGE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <FrameLayout
+        android:id="@+id/beer_barcode"
+        android:tag="BEER_BARCODE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />   
+    
+    <FrameLayout
+        android:id="@+id/beer_description"
+        android:tag="BEER_DESCRIPTION"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:id="@+id/beer_bitterness"
+        android:tag="BEER_BITTERNESS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <FrameLayout
+        android:id="@+id/beer_aroma"
+        android:tag="BEER_AROMA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <FrameLayout
+        android:id="@+id/beer_appareance"
+        android:tag="BEER_APPAREANCE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <FrameLayout
+        android:id="@+id/beer_colour"
+        android:tag="BEER_COLOUR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    -->
+
+</LinearLayout>

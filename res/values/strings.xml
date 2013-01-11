@@ -7,5 +7,14 @@
     <string name="search_beer_people_brewery">Search beer, people, brewery</string>
     <string name="Search">Button</string>
     <string name="details_view">This is where the details is shown</string>
+    <string name="beer_name">Name</string>
+    <string name="beer_style">Style</string>
+    <string name="bewery_name">Brewery</string>
+    <string name="register_beer">Register beer</string>
+    <string name="submit">Submit</string>
+    <string name="photo">Photo</string>
+    <string name="barcode">Barcode</string>
+    <string name="abv">% ABV</string>
+    <string name="my_rating">My rating</string>
 
 </resources>
