@@ -57,7 +57,9 @@ public class BeerDataSource {
 		return beer;
 	}
 
-//	public List<Beer> getAllBeers() {}
+	public List<Beer> getAllBeers() {
+		return null;
+	}
 //
 //	public int getBeersCount() {}
 //
